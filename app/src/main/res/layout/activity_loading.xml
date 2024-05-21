@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro"
+    android:background="@drawable/loadingbg">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:text=" Welcome\nto the Reci-Free!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/editTextLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="32dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:text="Login"
+                android:textColorHint="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/editTextRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:text="Register"
+                android:textColorHint="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/editTextGuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:text="LogIn As Guest"
+                android:textColorHint="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
